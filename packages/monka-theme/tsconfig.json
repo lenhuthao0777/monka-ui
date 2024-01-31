@@ -1,0 +1,22 @@
+{
+  "extends": "@repo/tsconfig/react-library.json",
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "strictNullChecks": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "src",
+    "stories",
+    "__tests__/*.tsx",
+    "index.ts",
+    "__tests__/util.test.ts"
+  ],
+  "exclude": ["dist", "node_modules"]
+}
