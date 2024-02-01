@@ -23,9 +23,11 @@
     "test": "jest --verbose --config ./jest.config.js --watch",
     "test:cov": "jest --verbose --config ./jest.config.js --ci --bail --silent --coverage --detectOpenHandles --coverageReporters=\"text-summary\"",
     "prepare": "husky",
-    "gen": "plop"
+    "gen": "plop",
+    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@repo/eslint-config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
     "@swc-node/jest": "^1.6.8",
