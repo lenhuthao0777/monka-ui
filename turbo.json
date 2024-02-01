@@ -14,7 +14,7 @@
       "dependsOn": ["^lint"]
     },
     "lint:fix": {
-      "outputs": []
+      "outputs": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.js"]
     },
     "typecheck": {
       "cache": false,
