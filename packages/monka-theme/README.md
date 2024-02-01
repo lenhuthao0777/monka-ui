@@ -1,4 +1,33 @@
-<h3 align="center">
-   monka-ui
-   <br>
-</h3>
+# monka-theme
+
+The core package includes all essential components and elements required for
+developing React web applications using the Mochi design system.
+
+For further details, visit our
+<!-- [Setup Documentation](https://ds.mochiui.com/?path=/docs/introduction-installation--docs). -->
+
+## Installation
+
+Feel free to use the package manager of your choice:
+
+```sh
+# Using PNPM
+pnpm i monka-theme
+
+# Using NPM
+npm i monka-theme
+
+# Using Yarn
+yarn add monka-theme
+```
+
+## Contribution
+
+We welcome your contributions! 
+<!-- For guidance on how to contribute, please refer
+to our [Contribution Guidelines](/CONTRIBUTING.md). -->
+
+## Licence
+
+This project is licensed under the terms of the
+[MIT license](https://choosealicense.com/licenses/mit/).
