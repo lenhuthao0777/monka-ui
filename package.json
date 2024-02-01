@@ -22,7 +22,8 @@
     "clean:install": "pnpm clean && pnpm install",
     "test": "jest --verbose --config ./jest.config.js --watch",
     "test:cov": "jest --verbose --config ./jest.config.js --ci --bail --silent --coverage --detectOpenHandles --coverageReporters=\"text-summary\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "gen": "plop"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

@@ -1,0 +1,16 @@
+import * as React from 'react'
+
+interface {{capitalize componentName}}Props extends React.PropsWithChildren {}
+
+const {{capitalize componentName}} = React.forwardRef<HTMLDivElement, {{capitalize componentName}}Props>(
+  ({ children, ...props }, ref) => {
+    return (
+      <div ref={ref} {...props}>
+        {children}
+      </div>
+    )
+  },
+)
+
+
+export default {{capitalize componentName}}
