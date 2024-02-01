@@ -24,7 +24,7 @@
     "test:cov": "jest --verbose --config ./jest.config.js --ci --bail --silent --coverage --detectOpenHandles --coverageReporters=\"text-summary\"",
     "prepare": "husky",
     "gen": "plop",
-    "publish-packages": "turbo run build lint test && changeset version && changeset publish"
+    "publish": "turbo run build lint test && changeset version && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
