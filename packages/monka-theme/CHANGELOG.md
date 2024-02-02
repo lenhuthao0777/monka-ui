@@ -1,5 +1,11 @@
 # monka-theme
 
+## 1.0.0
+
+### Major Changes
+
+- change
+
 ## 0.3.0
 
 ### Minor Changes
