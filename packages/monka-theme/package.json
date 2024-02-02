@@ -5,6 +5,12 @@
   "repository": {
     "url": "https://github.com/lenhuthao0777/monka-ui"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "author": "Johnny.dev",
+  "license": "ISC",
   "homepage": "monka.ui.io",
   "private": false,
   "main": "./dist/index.js",
@@ -41,9 +47,6 @@
     "tailwindcss": "^3.4.1",
     "tailwindcss-animate": "^1.0.7"
   },
-  "keywords": [],
-  "author": "Johnny.dev",
-  "license": "ISC",
   "dependencies": {
     "@radix-ui/themes": "^2.0.3"
   }
