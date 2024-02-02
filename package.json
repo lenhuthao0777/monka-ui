@@ -4,9 +4,6 @@
   "description": "Beautiful and accessible React UI library for building web3 applications",
   "author": "@Johnny.dev",
   "license": "ISC",
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
