@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from 'monka-theme'
+import { Button } from 'monka-themes'
 
 const Test = () => {
   return (

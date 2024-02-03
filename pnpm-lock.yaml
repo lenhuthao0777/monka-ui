@@ -140,9 +140,9 @@ importers:
       autoprefixer:
         specifier: ^10.0.1
         version: 10.4.17(postcss@8.4.33)
-      monka-theme:
+      monka-themes:
         specifier: workspace:*
-        version: link:../../packages/monka-theme
+        version: link:../../packages/monka-themes
       postcss:
         specifier: ^8
         version: 8.4.33
@@ -210,7 +210,7 @@ importers:
         specifier: ^5.3.3
         version: 5.3.3
 
-  packages/monka-theme:
+  packages/monka-themes:
     devDependencies:
       '@radix-ui/themes':
         specifier: ^2.0.3
