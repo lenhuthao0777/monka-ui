@@ -1,10 +1,10 @@
 # monka-theme
 
 The core package includes all essential components and elements required for
-developing React web applications using the Mochi design system.
+developing React web applications using the Monka design system.
 
 For further details, visit our
-<!-- [Setup Documentation](https://ds.mochiui.com/?path=/docs/introduction-installation--docs). -->
+<!-- [Setup Documentation](https://ds.monkaui.com/?path=/docs/introduction-installation--docs). -->
 
 ## Installation
 
@@ -12,13 +12,13 @@ Feel free to use the package manager of your choice:
 
 ```sh
 # Using PNPM
-pnpm i monka-theme
+pnpm i monka-themes
 
 # Using NPM
-npm i monka-theme
+npm i monka-themes
 
 # Using Yarn
-yarn add monka-theme
+yarn add monka-themes
 ```
 
 ## Contribution

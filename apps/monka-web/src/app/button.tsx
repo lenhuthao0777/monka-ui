@@ -1,18 +1,11 @@
 'use client'
-
-import { Button } from 'monka-themes'
-
+import { colors } from 'monka-themes'
 const Test = () => {
+  console.log(colors)
+
   return (
     <div className="flex flex-col p-5">
-      <div className="flex space-x-5">
-        <Button variant="default">Click!</Button>
-        <Button variant="destructive">Click!</Button>
-        <Button variant="ghost">Click!</Button>
-        <Button variant="link">Click!</Button>
-        <Button variant="outline">Click!</Button>
-        <Button variant="secondary">Click!</Button>
-      </div>
+      <div className="flex space-x-5"></div>
     </div>
   )
 }
