@@ -1,17 +1,18 @@
 'use client'
-
-import { Button } from 'monka-themes'
+import { Button } from 'monka-themes/dist/components'
 
 const Test = () => {
   return (
     <div className="flex flex-col p-5">
       <div className="flex space-x-5">
-        <Button variant="default">Click!</Button>
-        <Button variant="destructive">Click!</Button>
-        <Button variant="ghost">Click!</Button>
-        <Button variant="link">Click!</Button>
-        <Button variant="outline">Click!</Button>
-        <Button variant="secondary">Click!</Button>
+        <Button
+          variant="solid"
+          onClick={() => {
+            console.log('test')
+          }}
+        >
+          test
+        </Button>
       </div>
     </div>
   )
