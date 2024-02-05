@@ -14,9 +14,20 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^14.1.0",
     "@repo/eslint-config": "workspace:*",
     "@repo/tsconfig": "workspace:*",
-    "monka-theme": "workspace:*",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "monka-themes": "workspace:*",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
     "@next/eslint-plugin-next": "^14.1.0",
     "@types/node": "^20",
     "@types/react": "^18",

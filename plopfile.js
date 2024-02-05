@@ -29,13 +29,18 @@ const config = (plop) => {
     actions: [
       {
         type: 'add',
-        path: './packages/monka-theme/src/components/{{componentName}}/index.ts',
+        path: './packages/monka-themes/src/components/{{componentName}}/index.ts',
         templateFile: './plop/index.ts.hbs',
       },
       {
         type: 'add',
-        path: './packages/monka-theme/src/components/{{componentName}}/{{componentName}}.tsx',
+        path: './packages/monka-themes/src/components/{{componentName}}/{{componentName}}.tsx',
         templateFile: './plop/component.tsx.hbs',
+      },
+      {
+        type: 'add',
+        path: './packages/monka-themes/src/components/{{componentName}}/type.ts',
+        templateFile: './plop/type.ts.hbs',
       },
     ],
   })

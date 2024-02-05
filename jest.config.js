@@ -26,8 +26,8 @@ module.exports = {
   modulePathIgnorePatterns: [
     // Add patterns to ignore
     '[/\\\\](dist|build|.next)[/\\\\].+\\.(js|jsx|d.ts)$',
-    '<rootDir>/config',
-    '<rootDir>/packages/(icons|theme|storybook)/',
+    // '<rootDir>/config',
+    // '<rootDir>/packages/(icons|theme|storybook)/',
     '[/\\\\](packages|apps)[/\\\\].+\\.(config|stories).(js|ts|tsx)$',
   ],
   transform: {
@@ -46,8 +46,8 @@ module.exports = {
   },
   moduleNameMapper: {
     // Handle module aliases
-    '^~cpn/(.*)$': '<rootDir>/apps/mochi-web/components/$1',
-    '^~(.*)$': '<rootDir>/apps/mochi-web/$1',
+    '^~cpn/(.*)$': '<rootDir>/apps/monka-web/components/$1',
+    '^~(.*)$': '<rootDir>/apps/monka-web/$1',
   },
   transformIgnorePatterns: [`node_modules/(?!(?:.pnpm/)?(flat))`],
   setupFilesAfterEnv: ['@testing-library/jest-dom', './scripts/setup-test.ts'],

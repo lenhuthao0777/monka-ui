@@ -43,7 +43,7 @@ module.exports = {
     'import/export': 'off',
     'prettier/prettier': 'error',
     'react/display-name': 'off',
-    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
   },
   overrides: [
     {
@@ -60,7 +60,7 @@ module.exports = {
         'react/react-in-jsx-scope': 'off',
         'react/jsx-sort-props': 'off',
         'no-void': 'off',
-        'no-unused-vars': 'off',
+        'no-unused-vars': 'error',
         '@typescript-eslint/no-unused-vars': [
           'error',
           {
