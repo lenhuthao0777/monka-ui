@@ -1,15 +1,27 @@
-import * as React from 'react'
+import { forwardRef, InputHTMLAttributes } from 'react'
+import { cn } from '../../utils'
 
-interface InputProps extends React.PropsWithChildren {}
+type InputProps = InputHTMLAttributes<HTMLInputElement> & {
+  fullWidth?: boolean
+}
 
-const Input = React.forwardRef<HTMLDivElement, InputProps>(
-  ({ children, ...props }, ref) => {
+const Input = forwardRef<HTMLInputElement, InputProps>(
+  ({ children, className, fullWidth, type, ...props }, ref) => {
     return (
-      <div ref={ref} {...props}>
-        {children}
-      </div>
+      <input
+        className={cn(
+          'px-3 h-10 border border-primary-700 w-96 rounded-md',
+          className,
+          fullWidth && 'w-full',
+        )}
+        ref={ref}
+        type={type}
+        {...props}
+      />
     )
   },
 )
 
-export default Input
+Input.displayName = 'Input'
+
+export { Input }

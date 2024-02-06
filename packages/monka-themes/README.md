@@ -1,4 +1,4 @@
-# monka-theme
+# monka-themes
 
 The core package includes all essential components and elements required for
 developing React web applications using the Monka design system.
