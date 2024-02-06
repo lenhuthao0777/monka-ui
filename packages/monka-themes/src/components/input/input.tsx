@@ -1,18 +1,18 @@
 import { forwardRef, InputHTMLAttributes } from 'react'
 import { cn } from '../../utils'
+import { InputStyleProps } from './type'
 
-type InputProps = InputHTMLAttributes<HTMLInputElement> & {
-  fullWidth?: boolean
-}
+export type InputProps = InputHTMLAttributes<HTMLInputElement> &
+  InputStyleProps & {}
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ children, className, fullWidth, type, ...props }, ref) => {
+  ({ children, className, widthFull, type, ...props }, ref) => {
     return (
       <input
         className={cn(
-          'px-3 h-10 border border-primary-700 w-96 rounded-md',
+          'px-3 py-2 h-10 bg-background-body border border-primary-700 w-96 rounded-md focus:ring-primary-500 transition focus-visible:ring-2 disabled:opacity-50',
           className,
-          fullWidth && 'w-full',
+          widthFull && 'w-full',
         )}
         ref={ref}
         type={type}

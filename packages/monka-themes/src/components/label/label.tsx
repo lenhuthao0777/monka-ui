@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-interface AvatarProps extends React.PropsWithChildren {}
+interface LabelProps extends React.PropsWithChildren {}
 
-const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
+const Label = React.forwardRef<HTMLDivElement, LabelProps>(
   ({ children, ...props }, ref) => {
     return (
       <div ref={ref} {...props}>
@@ -12,4 +12,4 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
   },
 )
 
-export default Avatar
+export default Label
