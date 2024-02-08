@@ -1,5 +1,5 @@
 'use client'
-import { Button, Input } from 'monka-themes'
+import { Button, Input, Label } from 'monka-themes'
 import { ElementRef, useRef } from 'react'
 
 const Checks = () => {
@@ -18,7 +18,10 @@ const Checks = () => {
 
       <div>
         <Input ref={ref} />
+        <Input />
       </div>
+
+      <Label>test</Label>
     </div>
   )
 }
