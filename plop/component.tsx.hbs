@@ -1,8 +1,8 @@
-import * as React from 'react'
+import { forwardRef, PropsWithChildren } from 'react'
 
-interface {{capitalize componentName}}Props extends React.PropsWithChildren {}
+type {{capitalize componentName}}Props = PropsWithChildren & {}
 
-const {{capitalize componentName}} = React.forwardRef<HTMLDivElement, {{capitalize componentName}}Props>(
+const {{capitalize componentName}} = forwardRef<HTMLDivElement, {{capitalize componentName}}Props>(
   ({ children, ...props }, ref) => {
     return (
       <div ref={ref} {...props}>

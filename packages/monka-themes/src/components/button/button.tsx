@@ -1,6 +1,7 @@
 import { ComponentPropsWithoutRef, ElementRef, forwardRef } from 'react'
 import { Slot } from '@radix-ui/themes'
 import { button, ButtonStylesProps } from './type'
+import { cn } from '../../utils'
 
 const { buttonCva } = button
 
@@ -16,28 +17,30 @@ const Button = forwardRef<ElementRef<'button'>, ButtonProps>(
       variant,
       className,
       size,
-      asChild,
+      asChild = false,
       disabled,
       color,
-      loading,
-      ...rest
+      loading = false,
+      ...props
     },
     ref,
   ) => {
     const Component = asChild ? Slot : 'button'
     return (
       <Component
-        className={buttonCva({
-          className,
-          variant,
-          color,
-          size,
-          disabled,
-          loading,
-        })}
+        className={cn(
+          buttonCva({
+            className,
+            variant,
+            color,
+            size,
+            disabled,
+            loading,
+          }),
+        )}
         disabled={loading || disabled}
         ref={ref}
-        {...rest}
+        {...props}
       >
         {children}
       </Component>
@@ -45,4 +48,6 @@ const Button = forwardRef<ElementRef<'button'>, ButtonProps>(
   },
 )
 
-export { Button }
+Button.displayName = 'Button'
+
+export default Button

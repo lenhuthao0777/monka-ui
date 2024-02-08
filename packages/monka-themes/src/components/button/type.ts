@@ -1,4 +1,4 @@
-import { cva, VariantProps } from 'class-variance-authority'
+import { cva, type VariantProps } from 'class-variance-authority'
 import { clsx } from 'clsx'
 
 const commonVariant = {
@@ -390,7 +390,7 @@ const buttonCva = cva(
   },
 )
 
-const buttonloadIndicatorCva = cva('flex items-center', {
+const buttonLoadIndicatorCva = cva('flex items-center', {
   variants: {
     size: {
       sm: 'h-5 text-sm',
@@ -409,7 +409,7 @@ const buttonLoadingIconClsx = ({
 
 export const button = {
   buttonCva,
-  buttonloadIndicatorCva,
+  buttonLoadIndicatorCva,
   buttonLoadingIconClsx,
 }
 
