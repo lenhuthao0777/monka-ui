@@ -9,17 +9,33 @@ describe('Button', () => {
     expect(button).toBeInTheDocument()
   })
 
-  // it('calls the onClick function when clicked', () => {
-  //   const onClick = jest.fn()
-  //   const { getByText } = render(<Button onClick={onClick}>Click me</Button>)
-  //   const button = getByText('Click me')
-  //   fireEvent.click(button)
-  //   expect(onClick).toHaveBeenCalled()
-  // })
+  it('renders an input element', () => {
+    const { container } = render(<Input />)
+    const input = container.querySelector('input')
+    expect(input).toBeInTheDocument()
+  })
 
-  // it('disables the button when loading', () => {
-  //   const { container } = render(<Button loading>Click me</Button>)
-  //   const button = container.querySelector('button')
-  //   expect(button).toHaveClass('pointer-events-none')
-  // })
+  it('applies the correct className', () => {
+    const { container } = render(<Input className="test-class" />)
+    const input = container.querySelector('input')
+    expect(input).toHaveClass('test-class')
+  })
+
+  it('applies the disabled attribute', () => {
+    const { container } = render(<Input disabled />)
+    const input = container.querySelector('input')
+    expect(input).toBeDisabled()
+  })
+
+  it('input full width', () => {
+    const { container } = render(<Input widthFull />)
+    const input = container.querySelector('input')
+    expect(input).toHaveClass('w-full')
+  })
+
+  it('passes through any other props', () => {
+    const { container } = render(<Input data-testid="test-input" />)
+    const input = container.querySelector('input')
+    expect(input).toHaveAttribute('data-testid', 'test-input')
+  })
 })
