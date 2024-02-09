@@ -1,4 +1,10 @@
 import { flatten } from 'flat'
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
 
 function removeDefaultKeys<T extends Record<string, any>>(obj: T): Partial<T> {
   const newObj: Partial<T> = {}

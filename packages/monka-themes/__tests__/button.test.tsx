@@ -20,6 +20,6 @@ describe('Button', () => {
   it('disables the button when loading', () => {
     const { container } = render(<Button loading>Click me</Button>)
     const button = container.querySelector('button')
-    expect(button).toHaveClass('bg-white')
+    expect(button).toHaveClass('pointer-events-none')
   })
 })
