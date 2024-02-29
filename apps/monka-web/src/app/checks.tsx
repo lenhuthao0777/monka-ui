@@ -23,7 +23,7 @@ const Checks = () => {
 
       <Label>test</Label>
 
-      <Collapsible open={open} lazy>
+      <Collapsible open={open} lazy transitionDuration="100ms">
         <div className="flex flex-col space-y-4">
           <Label className="bg-gray-400">List item 1</Label>
           <Label className="bg-gray-400">List item 2</Label>
