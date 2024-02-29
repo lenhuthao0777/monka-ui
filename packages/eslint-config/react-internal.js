@@ -43,6 +43,7 @@ module.exports = {
     'import/export': 'off',
     'prettier/prettier': 'error',
     'react/display-name': 'off',
+    'no-unused-vars': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
   },
   overrides: [
