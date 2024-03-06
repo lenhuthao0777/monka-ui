@@ -1,7 +1,7 @@
 'use client'
 import { Button, Input, Label, Collapsible } from 'monka-themes'
 import { ElementRef, useRef, useState } from 'react'
-
+import { DatePickerDemo } from './date'
 const Checks = () => {
   const ref = useRef<ElementRef<'input'> | null>(null)
   const [open, setOpen] = useState(false)
@@ -33,6 +33,8 @@ const Checks = () => {
           <Label className="bg-gray-400">List item 6</Label>
         </div>
       </Collapsible>
+
+      <DatePickerDemo />
     </div>
   )
 }
